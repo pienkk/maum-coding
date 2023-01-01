@@ -10,6 +10,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+  console.log(process.env.DB_USERNAME);
   await app.listen(4000);
 }
 bootstrap();
